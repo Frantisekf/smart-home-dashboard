@@ -2,16 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 
-function App(props) {
+function Tabs(props) {
   return <Wrapper>{props.children}</Wrapper>;
 }
 
-const Wrapper = styled.div`
+const Tabs = styled.div`
   display: inline-block;
 `;
 
-App.propTypes = {
+Tabs.propTypes = {
   children: PropTypes.node,
 };
 
-export default App;
+export default Tabs;
