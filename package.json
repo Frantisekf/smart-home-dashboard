@@ -6,21 +6,24 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "lint-staged": "^10.4.2",
-    "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-scripts": "3.4.3",
-    "sass": "^1.27.0"
+    "styled-components": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint . --ext .jsx,.js & stylelint **/*.{css,scss}",
-    "lintfix": "eslint . --ext .jsx,.js --fix & stylelint **/*.{css,scss} --fix"
+    "lint": "eslint . --ext .jsx,.js & ",
+    "lintfix": "eslint . --ext .jsx,.js --fix"
+  },
+
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=6.9.0"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -51,6 +54,7 @@
     "eslint-plugin-prettier": "3.1.2",
     "husky": "^4.3.0",
     "prettier": "^2.1.2",
-    "stylelint": "^13.7.2"
+    "lint-staged": "^10.4.2",
+    "react-test-renderer": "^16.14.0"
   }
 }
