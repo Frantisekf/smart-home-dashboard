@@ -1,12 +1,17 @@
 import React from "react";
+import styled from "styled-components";
 import PropTypes from "prop-types";
 
 function Header(props) {
-  return <div className={styles.style}></div>;
+  return <Wrapper>{props.children}</Wrapper>;
 }
 
+const Wrapper = styled.div`
+  display: inline-block;
+`;
+
 Header.propTypes = {
-  name: PropTypes.string,
+  children: PropTypes.node,
 };
 
 export default Header;
