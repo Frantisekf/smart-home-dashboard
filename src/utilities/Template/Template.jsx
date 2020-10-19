@@ -1,10 +1,14 @@
 import React from "react";
-import styles from "./Template.module.scss";
+import styled from "styled-components";
 import PropTypes from "prop-types";
 
 function Template(props) {
-  return <div className={styles.style}></div>;
+  return <Wrapper className={styles.style}></Wrapper>;
 }
+
+const Wrapper = styled.div`
+  display: inline-block;
+`;
 
 Template.propTypes = {
   name: PropTypes.string,
